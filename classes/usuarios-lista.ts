@@ -1,4 +1,5 @@
-import { Usuario } from "./usuario";
+import { Usuario } from './usuario';
+
 
 // Centralizando la logica de los usuarios
 
@@ -30,7 +31,7 @@ export class UsuariosLista{
 
     // Obtener la lista de los usuarios
     public getLista(){
-        return this.lista;
+        return this.lista.filter( usuario => usuario.nombre !== 'sin-nombre');
     }
 
     // Regresar un usuario especifico
